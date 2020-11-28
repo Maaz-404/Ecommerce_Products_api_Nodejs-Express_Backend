@@ -1,0 +1,4 @@
+1- Migrate this project to work with Mysql database driver
+2- Dockerize this project
+3- Deploy with/without Docker
+4- Security including forms for XSS & db_injections' prevention
