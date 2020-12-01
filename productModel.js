@@ -10,7 +10,6 @@ var productSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    description: String,
     price: {
         type: String,
         required : true
@@ -19,6 +18,8 @@ var productSchema = mongoose.Schema({
         type: Date,
         default: Date.now
     }
+    description: String,
+    
 });
 // Export Product model
 var Product = module.exports = mongoose.model('product', productSchema);
