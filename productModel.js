@@ -17,7 +17,7 @@ var productSchema = mongoose.Schema({
     create_date: {
         type: Date,
         default: Date.now
-    }
+    },
     description: String,
     
 });
