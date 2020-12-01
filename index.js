@@ -32,6 +32,13 @@ else
 // Setup server port
 var port = process.env.PORT || 8080;
 
+// enable CORS without external module
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 // Send message for default URL
 app.get('/', (req, res) => res.send('Hello World with Express'));
 

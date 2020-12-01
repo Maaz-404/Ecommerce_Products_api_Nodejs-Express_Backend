@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
-
   },
   "keywords": [
     "API",
@@ -19,8 +18,11 @@
   "author": "David Inyang-Etoh",
   "license": "ISC",
   "dependencies": {
+    "admin-bro": "^3.3.1",
+    "admin-bro-expressjs": "^2.1.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
     "mongoose": "^5.6.4"
   }
 }

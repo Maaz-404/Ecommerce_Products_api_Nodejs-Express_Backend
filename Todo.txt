@@ -5,7 +5,7 @@
 
 ----------------------------------------------------------------------
 
-Current Tasks:
+Current Tasks: 
 
 1- Add Authentication for the admin products panel.
-2- Restrict the routes (front/backend) with Authentication
+2- Restrict the admin-panel routes (front-backend) with Authentication
