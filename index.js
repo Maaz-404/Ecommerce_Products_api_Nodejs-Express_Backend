@@ -6,6 +6,9 @@ let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 // Initialize the app
 let app = express();
+//Enable CORS
+const cors = require('cors');
+app.use(cors());
 
 // Import routes
 let apiRoutes = require("./api-routes");
@@ -15,7 +18,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb://localhost/ecommerce', { useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/ecommerce', { useNewUrlParser: true}, {useUnifiedTopology: true} );
 
 // Heroku Mongoose connection
 // mongoose.connect('mongodb://heroku_5686p02g:sia8l3fni4jmu7qbn0ac1t75mf@ds349857.mlab.com:49857/heroku_5686p02g', { useNewUrlParser: true });
@@ -33,11 +36,11 @@ else
 var port = process.env.PORT || 8080;
 
 // enable CORS without external module
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+// app.use(function (req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
 
 // Send message for default URL
 app.get('/', (req, res) => res.send('Hello World with Express'));
