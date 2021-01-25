@@ -69,7 +69,7 @@ exports.update = function (req, res) {
 };
 // Handle pelete product
 exports.delete = function (req, res) {
-    Product.remove({
+    Product.deleteOne({
         _id: req.params.product_id
     }, function (err, product) {
         if (err)
