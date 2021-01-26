@@ -9,3 +9,6 @@ Current Tasks:
 
 1- Add Authentication for the admin products panel.
 2- Restrict the admin-panel routes (front-backend) with Authentication
+3- Graph & stock data from external apis suchas from fiverr projects
+
+--> Update git repo continuously along with the changes to save them 
