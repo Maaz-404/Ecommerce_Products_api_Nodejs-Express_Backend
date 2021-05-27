@@ -12,6 +12,9 @@ app.use(cors());
 
 // Import routes
 let apiRoutes = require("./api-routes");
+
+let adminRoute = require("./admin-route");
+
 // Configure bodyparser to handle post requests
 app.use(bodyParser.urlencoded({
     extended: true
@@ -47,6 +50,10 @@ app.get('/', (req, res) => res.send('Hello World with Express'));
 
 // Use Api routes in the App
 app.use('/api', apiRoutes);
+
+// Use Admin Route in app - When written in a modular way
+app.use('/admin', adminRoute)
+
 // Launch app to listen to specified port
 app.listen(port, function () {
     console.log("Running ProductHub on port " + port);
