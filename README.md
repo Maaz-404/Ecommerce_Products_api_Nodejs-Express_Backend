@@ -2,8 +2,8 @@
 
 An app demonstrating simple API implementation with NodeJs, Express and MongoDb
 
-Admin Panel
-* Admin Panel `/admin`
+# Admin Panel
+*  `/admin`
 
 The following endpoints are currently available
 * GET `/api/products`
