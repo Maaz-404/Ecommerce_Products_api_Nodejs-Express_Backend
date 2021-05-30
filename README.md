@@ -1,6 +1,6 @@
 # Product HUb - ECommerce solution in MERN Stack
 
-An app demonstrating simple API implementation with NodeJs, Express and MongoDb
+A products api demonstrating simple API implementation with NodeJs, Express and MongoDb alongwith a React Admin Panel
 
 # Admin Panel
 *  `/admin`
